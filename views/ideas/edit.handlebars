@@ -1,0 +1,23 @@
+<div class="bg-img">
+  <div id="add-card-body" class="animated flipInY card card-body">
+    {{#each errors}}
+    <div class="alert alert-danger">{{text}}</div>
+    {{else}}
+    {{/each}}
+
+    <h3>Edit Journal Entry</h3>
+    <form action="/ideas/{{idea.id}}?_method=PUT" method="post">
+      <input type="hidden" name="_method" value="PUT">
+      <div class="form-group">
+        <label for="title">Title</label>
+        <input type="text" class="form-control" name="title" value="{{idea.title}}" required>
+      </div>
+
+      <div class="form-group">
+        <label for="details">What's on your mind?</label>
+        <textarea class="text-box form-control" name="details">{{idea.details}}</textarea>
+      </div>
+      <button class="btn btn-primary" type="submit">Submit Entry</button>
+    </form>
+  </div>
+</div>

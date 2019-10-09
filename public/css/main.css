@@ -1,0 +1,116 @@
+* {
+  box-sizing: border-box;
+}
+html {
+  height: 100vh;
+}
+body {
+  margin: 0;
+  overflow: auto;
+  background: rgb(154, 154, 197);
+  font-family: 'Playfair Display', serif;
+}
+.row {
+  height: 100vh !important;
+}
+.bg-image {
+  background: url('/img/journal.jpeg') no-repeat center center; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+}
+.bg-primary {
+  background: #5242A8 !important;
+}
+.btn {
+  font-weight: 600;
+  background: #5242A8;
+  color: white;
+  border: none;
+}
+.btn:hover {
+  background: rgb(164, 253, 22);
+  color: white;
+  transition: 1s ease-in-out
+}
+.textbox {
+  height: 4em;
+}
+.bg-img {
+  background: url('/img/add-bg.jpeg') no-repeat center center; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 100vh;
+}
+.card, .card-body {
+  -webkit-box-shadow: -2px 10px 36px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: -2px 10px 36px 0px rgba(0,0,0,0.75);
+  box-shadow: -2px 10px 36px 0px rgba(0,0,0,0.75);
+}
+textarea.form-control {
+  height: 150px;
+}
+.form-spacing {
+  width: 75%;
+  margin: 0 auto;
+}
+/* About */
+.left-content-wrap {
+  width: 40%;
+  height: 100vh;
+  background: white;
+  display: inline-block;
+  -webkit-box-shadow: -2px 10px 36px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: -2px 10px 36px 0px rgba(0,0,0,0.75);
+  box-shadow: -2px 10px 36px 0px rgba(0,0,0,0.75);
+}
+span {
+  color: #5242A8;
+  font-weight: 600;
+}
+p {
+  font-size: 1rem;
+  line-height: 2;
+  font-weight: 300;
+}
+.right-content-wrap {
+  width: 60%;
+  height: 100vh;
+  float: right;
+  background: url('/img/about.jpg') no-repeat center center; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+/* IDEAS PAGE */
+.index-container {
+  width: 40%;
+}
+
+/* Delete button */
+.delete-btn {
+  background: red !important;
+}
+
+/* Log in */
+.login-img {
+  height: auto;
+  width: 80px;
+  display: block;
+  margin: 0 auto;
+}
+.login-bg {
+  background: rgb(228, 228, 238);
+}
+/* register */
+.register-bg {
+  background: rgb(228, 228, 238);
+}
