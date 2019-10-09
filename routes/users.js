@@ -39,7 +39,7 @@ router.post("/register", (req, res) => {
   if (req.body.password.length < 5) {
     errors.push({ text: "Password must at least be 5 characters" });
   }
-
+  // Check for errors
   if (errors.length > 0) {
     res.render("users/register", {
       errors: errors,
